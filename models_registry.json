@@ -1,0 +1,96 @@
+{
+  "version": "1.0.0",
+  "dictionary": {
+    "maize": {
+      "Healthy": { "en": "Healthy", "sw": "Hali Nzuri" }
+    },
+    "cassava": {
+      "Healthy": { "en": "Healthy", "sw": "Hali Nzuri" }
+    },
+    "rice": {
+      "Healthy": { "en": "Healthy", "sw": "Hali Nzuri" }
+    },
+    "cashew": {
+      "Healthy": { "en": "Healthy", "sw": "Hali Nzuri" }
+    },
+    "cotton": {
+      "Healthy": { "en": "Healthy", "sw": "Hali Nzuri" }
+    },
+    "potato": {
+      "Healthy": { "en": "Healthy", "sw": "Hali Nzuri" }
+    },
+    "beans": {
+      "Healthy": { "en": "Healthy", "sw": "Hali Nzuri" }
+    },
+    "coffee": {
+      "Healthy": { "en": "Healthy", "sw": "Hali Nzuri" }
+    },
+    "tomato": {
+      "Healthy": { "en": "Healthy", "sw": "Hali Nzuri" }
+    },
+    "banana": {
+      "Healthy": { "en": "Healthy", "sw": "Hali Nzuri" }
+    },
+    "avocado": {
+      "Healthy": { "en": "Healthy", "sw": "Hali Nzuri" }
+    }
+  },
+  "models": [
+    {
+      "id": "cashew",
+      "name": "Korosho (Cashew)",
+      "tflite": "cashew.tflite",
+      "labels": "cashew_labels.txt",
+      "tier": "expert"
+    },
+    {
+      "id": "cotton",
+      "name": "Pamba (Cotton)",
+      "tflite": "cotton.tflite",
+      "labels": "cotton_labels.txt",
+      "tier": "expert"
+    },
+    {
+      "id": "potato",
+      "name": "Viazi (Potato)",
+      "tflite": "potato.tflite",
+      "labels": "potato_labels.txt",
+      "tier": "expert"
+    },
+    {
+      "id": "beans",
+      "name": "Maharage (Beans)",
+      "tflite": "bean.tflite",
+      "labels": "bean_labels.txt",
+      "tier": "expert"
+    },
+    {
+      "id": "coffee",
+      "name": "Kahawa (Coffee)",
+      "tflite": "coffee.tflite",
+      "labels": "coffee_labels.txt",
+      "tier": "expert"
+    },
+    {
+      "id": "tomato",
+      "name": "Nyanya (Tomato)",
+      "tflite": "tomato.tflite",
+      "labels": "tomato_labels.txt",
+      "tier": "expert"
+    },
+    {
+      "id": "banana",
+      "name": "Ndizi (Banana)",
+      "tflite": "banana.tflite",
+      "labels": "banana_labels.txt",
+      "tier": "expert"
+    },
+    {
+      "id": "avocado",
+      "name": "Parachichi (Avocado)",
+      "tflite": "avocado.tflite",
+      "labels": "avocado_labels.txt",
+      "tier": "expert"
+    }
+  ]
+}
