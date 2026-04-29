@@ -1,0 +1,4 @@
+Blight
+Rust
+MLND
+Healthy
