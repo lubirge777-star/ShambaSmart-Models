@@ -1,41 +1,27 @@
 {
-  "version": "1.0.0",
-  "dictionary": {
-    "maize": {
-      "Healthy": { "en": "Healthy", "sw": "Hali Nzuri" }
-    },
-    "cassava": {
-      "Healthy": { "en": "Healthy", "sw": "Hali Nzuri" }
-    },
-    "rice": {
-      "Healthy": { "en": "Healthy", "sw": "Hali Nzuri" }
-    },
-    "cashew": {
-      "Healthy": { "en": "Healthy", "sw": "Hali Nzuri" }
-    },
-    "cotton": {
-      "Healthy": { "en": "Healthy", "sw": "Hali Nzuri" }
-    },
-    "potato": {
-      "Healthy": { "en": "Healthy", "sw": "Hali Nzuri" }
-    },
-    "beans": {
-      "Healthy": { "en": "Healthy", "sw": "Hali Nzuri" }
-    },
-    "coffee": {
-      "Healthy": { "en": "Healthy", "sw": "Hali Nzuri" }
-    },
-    "tomato": {
-      "Healthy": { "en": "Healthy", "sw": "Hali Nzuri" }
-    },
-    "banana": {
-      "Healthy": { "en": "Healthy", "sw": "Hali Nzuri" }
-    },
-    "avocado": {
-      "Healthy": { "en": "Healthy", "sw": "Hali Nzuri" }
-    }
-  },
+  "version": "1.1.0",
   "models": [
+    {
+      "id": "maize",
+      "name": "Mahindi (Maize)",
+      "tflite": "maize_model.tflite",
+      "labels": "maize_labels.txt",
+      "tier": "expert"
+    },
+    {
+      "id": "cassava",
+      "name": "Muhogo (Cassava)",
+      "tflite": "cassava_model.tflite",
+      "labels": "cassava_labels.txt",
+      "tier": "expert"
+    },
+    {
+      "id": "rice",
+      "name": "Mpunga (Rice)",
+      "tflite": "rice.tflite",
+      "labels": "rice_labels.txt",
+      "tier": "expert"
+    },
     {
       "id": "cashew",
       "name": "Korosho (Cashew)",
@@ -55,14 +41,14 @@
       "name": "Viazi (Potato)",
       "tflite": "potato.tflite",
       "labels": "potato_labels.txt",
-      "tier": "expert"
+      "tier": "generalist"
     },
     {
-      "id": "beans",
+      "id": "bean",
       "name": "Maharage (Beans)",
       "tflite": "bean.tflite",
       "labels": "bean_labels.txt",
-      "tier": "expert"
+      "tier": "generalist"
     },
     {
       "id": "coffee",
@@ -92,5 +78,32 @@
       "labels": "avocado_labels.txt",
       "tier": "expert"
     }
-  ]
+  ],
+  "dictionary": {
+    "maize": {
+      "Blight": {"en": "Maize Leaf Blight", "sw": "Mnyauko wa Majani ya Mahindi"},
+      "Rust": {"en": "Common Rust", "sw": "Kutu ya Mahindi"},
+      "MLND": {"en": "Maize Lethal Necrosis", "sw": "Mnyauko Hatari wa Mahindi"},
+      "Healthy": {"en": "Healthy Maize", "sw": "Mahindi Yenye Afya"}
+    },
+    "cassava": {
+      "CBB": {"en": "Cassava Bacterial Blight", "sw": "Mnyauko wa Bakteria wa Muhogo"},
+      "CBSD": {"en": "Cassava Brown Streak Disease", "sw": "Ugonjwa wa Michirizi ya Kahawia"},
+      "CGM": {"en": "Cassava Green Mite", "sw": "Matitiri ya Kijani ya Muhogo"},
+      "CMD": {"en": "Cassava Mosaic Disease", "sw": "Ugonjwa wa Batobato wa Muhogo"},
+      "Healthy": {"en": "Healthy Cassava", "sw": "Muhogo Wenye Afya"}
+    },
+    "rice": {
+      "Blast": {"en": "Rice Blast", "sw": "Blast ya Mpunga"},
+      "Brown Spot": {"en": "Brown Spot", "sw": "Madoa ya Kahawia"},
+      "Hispa": {"en": "Rice Hispa", "sw": "Mende wa Mpunga"},
+      "Healthy": {"en": "Healthy Rice", "sw": "Mpunga Wenye Afya"}
+    },
+    "banana": {
+      "BXW": {"en": "Banana Xanthomonas Wilt", "sw": "Mnyauko wa Bakteria wa Ndizi"},
+      "BBTV": {"en": "Banana Bunchy Top Virus", "sw": "Virusi vya Rundo la Ndizi"},
+      "Sigatoka": {"en": "Black Sigatoka", "sw": "Sigatoka Nyeusi"},
+      "Healthy": {"en": "Healthy Banana", "sw": "Ndizi Zenye Afya"}
+    }
+  }
 }
